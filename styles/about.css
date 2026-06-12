@@ -1,0 +1,104 @@
+/* Tapify — About page-specific layout only (tokens live in global.css) */
+
+/* HERO stage (dark, full-bleed) */
+.about-hero {
+  position: relative;
+  min-height: 86vh;
+  background: var(--surface-0);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.about-hero__media {
+  position: absolute;
+  inset: 0;
+}
+.about-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1) contrast(1.05);
+  opacity: 0.55;
+}
+.about-hero__copy {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 76px;
+}
+.about-hero__copy .eyebrow { color: var(--color-signal-orange); margin-bottom: 16px; }
+.about-hero__title { margin-bottom: 24px; }
+.about-hero__sub {
+  font-size: 21px;
+  line-height: 1.38;
+  color: var(--color-frost-white);
+  max-width: 560px;
+}
+
+/* Feature stages (stacked dark full-bleed cards) */
+.feature-stage { padding-block: 0; }
+.feature-stage + .feature-stage { padding-top: 28px; }
+.feature-stage .feature-card { height: 620px; }
+.feature-card__overlay .feature-card__kicker { display: block; font-size: 21px; font-weight: 600; margin-bottom: 6px; }
+.feature-card__overlay .feature-card__sub { display: block; color: var(--color-silver-mist); }
+
+/* Light detail band split tweaks */
+.detail .body-copy { margin-block: 20px 28px; }
+.detail .split img { border-radius: var(--radius-3xl-2); filter: grayscale(1) contrast(1.05); }
+
+/* Values list (single column, NOT a grid) */
+.values { margin-top: 56px; max-width: 720px; }
+.values__item {
+  display: flex;
+  align-items: baseline;
+  gap: 28px;
+  padding-block: 28px;
+  border-top: 1px solid var(--border-light);
+}
+.values__item:last-child { border-bottom: 1px solid var(--border-light); }
+.values__num {
+  font-family: var(--font-sf-pro-display);
+  font-weight: var(--font-weight-bold);
+  font-size: 40px;
+  letter-spacing: -0.4px;
+  color: var(--color-obsidian);
+  font-feature-settings: "tnum";
+  min-width: 120px;
+  white-space: nowrap;
+}
+.values__text h3 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  margin-bottom: 4px;
+  color: var(--color-obsidian);
+}
+.values__text p {
+  font-size: 17px;
+  line-height: 1.47;
+  color: var(--color-platinum);
+}
+
+/* Final dark CTA band */
+.cta-band { text-align: center; }
+.cta-band .display { margin-bottom: 28px; }
+
+/* Footer wordmark */
+.footer__wordmark {
+  font-family: var(--font-sf-pro-display);
+  font-weight: var(--font-weight-bold);
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  color: var(--color-smoke);
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .feature-stage .feature-card { height: 460px; }
+  .about-hero { min-height: 70vh; }
+  .about-hero__sub { font-size: 19px; }
+}
+@media (max-width: 560px) {
+  .values__item { flex-direction: column; gap: 6px; }
+  .values__num { font-size: 32px; min-width: 0; }
+}

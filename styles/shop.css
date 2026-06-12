@@ -1,0 +1,58 @@
+/* Tapify — Shop / Product Listing page layout (reuses global.css + tokens.css) */
+
+/* Sticky pill nav wrapper */
+.nav__pill {
+  max-width: var(--page-max-width);
+  margin: 12px auto 0;
+  padding: 6px 22px;
+  border-radius: var(--radius-nav);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.nav__pill .nav__inner { padding: 4px 0; }
+
+/* Store header */
+.store-head { text-align: center; }
+.store-head .display { margin-bottom: 12px; }
+.store-head .store-sub {
+  font-size: 21px;
+  line-height: 1.38;
+  color: var(--color-frost-white);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Product stage row */
+.stage .split { gap: 80px; }
+.stage--reverse .stage__media { order: 2; }
+.stage--reverse .stage__copy  { order: 1; }
+
+.stage__media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-3xl);
+}
+
+.stage__copy .eyebrow { display: block; margin-bottom: 14px; }
+.stage__copy .heading-lg,
+.stage__copy .display { margin-bottom: 18px; }
+.stage__copy .body-copy { margin-bottom: 24px; }
+
+.stage__price {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  letter-spacing: -0.22px;
+}
+.section--dark  .stage__price { color: var(--color-frost-white); }
+.section--light .stage__price { color: var(--color-obsidian); }
+.stage__price small { display: block; font-weight: 400; color: var(--color-platinum); margin-top: 4px; }
+
+@media (max-width: 900px) {
+  .stage .split { gap: 36px; }
+  .stage--reverse .stage__media { order: 0; }
+  .stage--reverse .stage__copy  { order: 0; }
+  .store-head .store-sub { font-size: 19px; }
+}

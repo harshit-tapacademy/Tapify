@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu bolsa — Tapify</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+  </head>
+  <body>
+    <!-- Promo banner -->
+    <div class="promo">
+      Envío gratis y devoluciones sencillas en todos los pedidos.
+      <a href="shop.html">Comprar ahora &rsaquo;</a>
+    </div>
+
+    <!-- Sticky pill nav -->
+    <nav class="nav">
+      <div class="nav__inner">
+        <a class="nav__brand" href="index.html">
+          <img src="assets/tapify-logo.png" alt="Tapify" />
+        </a>
+        <ul class="nav__links">
+          <li><a href="shop.html">Store</a></li>
+          <li><a href="about.html">Support</a></li>
+        </ul>
+        <div class="nav__icons">
+          <a href="shop.html" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="21" y1="21" x2="16.5" y2="16.5" />
+            </svg>
+          </a>
+          <a href="cart.html" aria-label="Bolsa">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 7h12l-1 13H7L6 7z" />
+              <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cart -->
+    <main class="section section--light">
+      <div class="container">
+        <span class="eyebrow eyebrow--orange">Tu pedido</span>
+        <h1 class="display">Tu bolsa.</h1>
+
+        <div class="cart-layout">
+          <!-- Line items -->
+          <ul class="cart-list">
+            <li class="cart-item">
+              <div class="cart-item__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"
+                  alt="Tapify Studio Headphones"
+                />
+              </div>
+              <div class="cart-item__info">
+                <p class="cart-item__name">Tapify Studio Headphones</p>
+                <p class="cart-item__sub">Negro medianoche &middot; Cancelación de ruido</p>
+                <div class="stepper">
+                  <span>&minus;</span>
+                  <span class="stepper__count">1</span>
+                  <span>+</span>
+                </div>
+              </div>
+              <p class="cart-item__price">349,00&nbsp;€</p>
+            </li>
+
+            <li class="cart-item">
+              <div class="cart-item__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+                  alt="Tapify Watch Series 9"
+                />
+              </div>
+              <div class="cart-item__info">
+                <p class="cart-item__name">Tapify Watch Series 9</p>
+                <p class="cart-item__sub">Aluminio plata &middot; Correa deportiva</p>
+                <div class="stepper">
+                  <span>&minus;</span>
+                  <span class="stepper__count">1</span>
+                  <span>+</span>
+                </div>
+              </div>
+              <p class="cart-item__price">429,00&nbsp;€</p>
+            </li>
+
+            <li class="cart-item">
+              <div class="cart-item__thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400"
+                  alt="Tapify Buds Pro"
+                />
+              </div>
+              <div class="cart-item__info">
+                <p class="cart-item__name">Tapify Buds Pro</p>
+                <p class="cart-item__sub">Blanco hueso &middot; Estuche de carga</p>
+                <div class="stepper">
+                  <span>&minus;</span>
+                  <span class="stepper__count">2</span>
+                  <span>+</span>
+                </div>
+              </div>
+              <p class="cart-item__price">198,00&nbsp;€</p>
+            </li>
+          </ul>
+
+          <!-- Order summary -->
+          <aside class="summary">
+            <h2 class="summary__title">Resumen del pedido</h2>
+            <div class="summary__row">
+              <span class="label">Subtotal</span>
+              <span class="value">976,00&nbsp;€</span>
+            </div>
+            <div class="summary__row">
+              <span class="label">Envío</span>
+              <span class="value">Gratis</span>
+            </div>
+            <div class="summary__row">
+              <span class="label">Impuestos estimados</span>
+              <span class="value">204,96&nbsp;€</span>
+            </div>
+            <div class="summary__row summary__row--total">
+              <span class="label">Total</span>
+              <span class="value">1.180,96&nbsp;€</span>
+            </div>
+
+            <a class="btn-cta" href="#">Tramitar pedido</a>
+
+            <p class="reassure">
+              Entrega gratuita en 2&ndash;3 días laborables.<br />
+              Devoluciones sin coste durante 14 días.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h4>Comprar</h4>
+            <ul>
+              <li><a href="shop.html">Store</a></li>
+              <li><a href="cart.html">Tu bolsa</a></li>
+              <li><a href="shop.html">Novedades</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Soporte</h4>
+            <ul>
+              <li><a href="about.html">Ayuda</a></li>
+              <li><a href="about.html">Envíos y devoluciones</a></li>
+              <li><a href="about.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Tapify</h4>
+            <ul>
+              <li><a href="about.html">Quiénes somos</a></li>
+              <li><a href="about.html">Privacidad</a></li>
+              <li><a href="about.html">Términos</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          Copyright &copy; 2026 Tapify Inc. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
