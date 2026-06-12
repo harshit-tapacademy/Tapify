@@ -1,16 +1,5 @@
 /* Tapify — Shop / Product Listing page layout (reuses global.css + tokens.css) */
 
-/* Sticky pill nav wrapper */
-.nav__pill {
-  max-width: var(--page-max-width);
-  margin: 12px auto 0;
-  padding: 6px 22px;
-  border-radius: var(--radius-nav);
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.nav__pill .nav__inner { padding: 4px 0; }
-
 /* Store header */
 .store-head { text-align: center; }
 .store-head .display { margin-bottom: 12px; }
